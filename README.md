@@ -1,5 +1,5 @@
 # HTML-CSS-Final-Project
-Proyecto final de CSS utilizando Sass y Bootstrap
+Final project Using HTML-CSS (SASSS & BOOTSTRAP)
 
 CONTENTS OF THIS FILE
 ---------------------
