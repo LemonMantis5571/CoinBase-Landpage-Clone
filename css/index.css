@@ -97,7 +97,7 @@
 }
 
 html {
-  min-width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -192,6 +192,10 @@ body {
 
 .sec-benefits {
   border-top: 1px solid #ddd;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
 }
 .sec-benefits .benefit-cards {
   width: 100%;
@@ -200,6 +204,7 @@ body {
 
 .sec-kpis {
   width: 100%;
+  display: flex;
   background-color: #0075FF;
   color: white;
   padding: 4rem;
@@ -231,6 +236,7 @@ body {
 }
 
 .sec-footer-cta {
+  width: 100%;
   background-color: #f4f8fe;
   padding: 5rem;
   background-image: url("../assets/img/bg 1.png");
@@ -273,6 +279,10 @@ body {
   .sec-features .intro p, .sec-benefits .intro .intro p, .sec-onboarding .intro .intro p {
     font-size: 1rem;
   }
+  .sec-kpis {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */

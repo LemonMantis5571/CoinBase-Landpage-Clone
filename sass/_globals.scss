@@ -5,11 +5,11 @@
     max-width: 992px;
     margin: auto;
     padding: 3rem;
-    
+
 }
 
 html {
-    min-width: 100vw;
+    width: 100%;
 }
 
 body {
@@ -32,23 +32,24 @@ body {
     max-width: 7rem;
 }
 
-.sec-home{
+.sec-home {
     display: flex;
     align-items: center;
     @include section-display();
 
-    .home-cta{
+    .home-cta {
         flex: 1;
-        .cta-text{
+
+        .cta-text {
             color: componentes.$color-main;
-            
+
         }
 
         .home-title {
             width: 20rem;
             font-size: 3rem;
         }
-        
+
         .home-description {
             width: 300px;
         }
@@ -67,9 +68,10 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .intro{
+    .intro {
         text-align: center;
-        h3{
+
+        h3 {
             font-size: 1.8rem;
 
         }
@@ -79,13 +81,13 @@ body {
             color: #888;
         }
     }
-    
+
     .features {
         display: flex;
         gap: 1rem;
         align-items: center;
-   
-        .text{
+
+        .text {
             padding: 2rem 0;
             flex: 1;
 
@@ -110,7 +112,7 @@ body {
             }
         }
 
-        .image{
+        .image {
             max-width: 20rem;
         }
     }
@@ -119,8 +121,9 @@ body {
 
 .sec-benefits {
     border-top: 1px solid #ddd;
+    @include section-display();
 
-    .intro{
+    .intro {
         @extend .sec-features, .intro;
     }
 
@@ -128,11 +131,12 @@ body {
         width: 100%;
         padding: 0 2rem 2rem 2rem;
     }
-   
+
 }
 
 .sec-kpis {
     width: 100%;
+    display: flex;
     background-color: componentes.$color-main;
     color: white;
     padding: 4rem;
@@ -155,7 +159,7 @@ body {
 }
 
 .sec-onboarding {
-    .intro{
+    .intro {
         @extend .sec-features, .intro;
     }
 
@@ -176,52 +180,55 @@ body {
 }
 
 .sec-footer-cta {
+    width: 100%;
     background-color: componentes.$color-footer;
     padding: 5rem;
     background-image: url("../assets/img/bg\ 1.png");
     background-repeat: no-repeat;
     background-position: 100%;
+
     .footer-cta {
         width: 50%;
 
         .cta-title {
             font-size: 2rem;
-    
+
         }
-    
+
         .cta-description {
             font-size: 1.1rem;
-    
+
         }
-        
+
     }
 }
 
 @media (max-width: 768px) {
-    .sec-onboarding{
-        .steps{
+    .sec-onboarding {
+        .steps {
             flex-direction: column;
 
             .icon-desc {
-                .title{
+                .title {
                     text-align: center;
                 }
             }
         }
     }
 
-    .sec-footer-cta{
+    .sec-footer-cta {
         background-image: none;
 
-        .footer-cta{
+        .footer-cta {
             width: 100%;
             text-align: center;
         }
     }
 
-    .sec-benefits{
+    .sec-benefits {
         .intro {
             text-align: center;
+
             h3 {
                 font-size: 2rem;
             }
@@ -233,10 +240,16 @@ body {
             h3 {
                 font-size: 2rem;
             }
-            p{
+
+            p {
                 font-size: 1rem;
             }
         }
     }
-    
+
+    .sec-kpis {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
