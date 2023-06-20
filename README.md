@@ -14,7 +14,6 @@ INTRODUCTION
 ------------
 
 A copy of Coinbase webpage from a Figma.
-Project made of the finalization of HTML & CSS Bootcamp.
 
 ![image](https://user-images.githubusercontent.com/85099589/194005509-d92dc563-19c6-49f2-bd9f-8006b7e79851.png)
 
